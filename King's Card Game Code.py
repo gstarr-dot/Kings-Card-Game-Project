@@ -33,7 +33,7 @@ class Deck:
   def deal_card(self):
     return self.cards.pop()
 
-#create the deck and shuffling  
+#create the deck and shuffle  
 deck = Deck()
 deck.shuffle()
 
