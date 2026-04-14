@@ -18,7 +18,7 @@ Card Class - represents a single card in the deck. Specifies the suit and value,
 
 Deck Class - represents a single full 52-card deck of playing cards. 
   random.shuffle() - shuffles the deck 
-  pop() - deals card 
+  deck.deal_card() - deals card 
   
 
 
