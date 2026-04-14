@@ -114,7 +114,7 @@ while running:
     screen.blit(font.render("Spades", True, (255, 255, 255)), (560, 410))
 
   for events in pygame.event.get():
-   if events.type == pygame.QUIT:
+   if events.type == pygame.QUIT:       #closes window 
     running = False
 
    elif events.type == pygame.MOUSEBUTTONDOWN:
@@ -129,7 +129,7 @@ while running:
         stage = 2
         message = "Higher or Lower?"
       else:
-        reset()
+        reset()     #checks the color of the card, sends back to level one if incorrect 
 
     elif stage == 2:
         if (b1.collidepoint(events.pos) and new.value > cards[0].value) or \
@@ -138,7 +138,7 @@ while running:
             stage = 3
             message = "Inside or Outside?"
         else:
-            reset()
+            reset()     #checks if the value is higher of lower, sends back to level on if wrong, prints inside or outside if correct 
     
     elif stage == 3:
       if (b1.collidepoint(events.pos) and cards[0].value < new.value < cards[1].value) or \
@@ -147,7 +147,7 @@ while running:
         stage = 4
         message = "Pick a suit"
       else:
-        reset()
+        reset()      #checks if value was inside or outside, prints pick a suit if correct, back to level one if incorrect 
 
     elif stage == 4:
       if (b1.collidepoint(events.pos) and new.suit == 'Hearts') or \
