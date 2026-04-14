@@ -30,7 +30,7 @@ class Deck:
   def shuffle(self):            #randomly shuffle the deck 
     random.shuffle(self.cards)
 
-  def deal_card(self):
+  def deal_card(self):         #deals a card from deck 
     return self.cards.pop()
 
 #create the deck and shuffle  
@@ -40,11 +40,11 @@ deck.shuffle()
 
 #Level one - First Card 
 stage = 1 
-cards = []
+cards = []         #stores the cards drawn 
 message = "Color of first Card? Red or Black?"
 
 def is_red(card):
-    return card.suit in ['Hearts', 'Diamonds']
+    return card.suit in ['Hearts', 'Diamonds']     #checks if card is red or not 
 
 def reset():
   global deck, stage, cards, message 
@@ -59,7 +59,7 @@ running = True
 while running:
   screen.fill((0, 120, 0))    #green background like solitare 
 
-  #show text message 
+  #print text message 
   msg = font.render(message, True, (255, 255, 255))
   screen.blit(msg, (200, 50))
 
@@ -78,6 +78,7 @@ while running:
     screen.blit(font.render("Red", True, (255, 255, 255)), (220, 410))
     screen.blit(font.render("Black", True, (255, 255, 255)), (420, 410))
 
+  #level 2 (higher/lower)
   elif stage == 2:
     b1 = pygame.Rect(200, 400, 150, 50)
     b2 = pygame.Rect(400, 400, 150, 50)
@@ -86,7 +87,8 @@ while running:
 
     screen.blit(font.render("Higher", True, (255, 255, 255)), (220, 410))
     screen.blit(font.render("Lower", True, (255, 255, 255)), (420, 410))
-
+    
+  #level 3 (inside/outside) 
   elif stage == 3:
     b1 = pygame.Rect(200, 400, 150, 50)
     b2 = pygame.Rect(400, 400, 150, 50)
