@@ -98,6 +98,7 @@ while running:
     screen.blit(font.render("Inside", True, (255, 255, 255)), (220, 410))
     screen.blit(font.render("Outside", True, (255, 255, 255)), (420, 410))
 
+  #level 4 (Suits) 
   elif stage == 4:
     b1 = pygame.Rect(100, 400, 120, 50)
     b2 = pygame.Rect(250, 400, 120, 50)
