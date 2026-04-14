@@ -6,4 +6,6 @@ This project is for my game King's Card, which is a basic card game using a sing
 How to Run:
 python dist/main.py
 
+Controls: 
+
 
