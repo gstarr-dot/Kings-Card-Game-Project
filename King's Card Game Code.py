@@ -27,7 +27,7 @@ class Deck:
     values = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] #11=Jack, 12=Queen, 13=King, 14=Ace
     self.cards = [Card(suit, value) for suit in suits for value in values]
 
-  def shuffle(self):
+  def shuffle(self):            #randomly shuffle the deck 
     random.shuffle(self.cards)
 
   def deal_card(self):
