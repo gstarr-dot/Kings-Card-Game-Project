@@ -25,7 +25,7 @@ Deck Class - represents a single full 52-card deck of playing cards.
   deck.deal_card() - deals card 
 
 Obstacles: 
-One obstacle that I encountered was having the face cards (Kings, Queens, Jacks) printed as numerical values of 12 for Jack, 13 for Queen, 14 for Kings rather than printing Jack. Although not appealing to the user, with so many comparisons of numerical values, it was easier to leave as 12-14. 
+One obstacle that I encountered was having the face cards (Kings, Queens, Jacks) printed as numerical values of 11 for Jack, 12 for Queen, 13 for Kings, and 14 for Aces rather than printing the word. Although not appealing to the user, with so many comparisons of numerical values, it was easier to leave it as 11-14. 
 
 
   
