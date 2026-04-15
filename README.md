@@ -18,13 +18,14 @@ The game uses mouse clicks to select a button on the screen.
 OOP Breakdown: 
 Classes - Card and deck 
 
-Card Class - \ represents a single card in the deck. Specifies the suit and value, using 2-14, 11-14 representing Jack, Queen, King, and Ace, respectively. The card is printed on the screen using a string. 
+Card Class - represents a single card in the deck. Specifies the suit and value, using 2-14, 11-14 representing Jack, Queen, King, and Ace, respectively. The card is printed on the screen using a string. 
 
-Deck Class - \ represents a single full 52-card deck of playing cards. 
+Deck Class - represents a single full 52-card deck of playing cards. 
   random.shuffle() - shuffles the deck 
   deck.deal_card() - deals card 
 
-Obstacles: \
+Obstacles: 
+One obstacle that I encountered was having the face cards (Kings, Queens, Jacks) printed as numerical values of 12 for Jack, 13 for Queen, 14 for Kings rather than printing Jack. Although not appealing to the user, with so many comparisons of numerical values, it was easier to leave as 12-14. 
 
 
   
