@@ -4,7 +4,7 @@ Game Pitch:
 This project is for my game King's Card, which is a basic card game using a single 52-card deck. The game is broken into four levels, of which, if you fail, you return to level one. This game is all about a lucky guess or focusing on probabilities. 
 
 Level 1- Choose the color of the random card. (red/black) /
-Level 2 - Given the card, will the next card be higher or lower? (higher/lower) 
+Level 2 - Given the card, will the next card be higher or lower? (higher/lower) \
 Level 3 - Is the value of the next card, inside or outside the values of the two previous cards? (inside/outside)
 Level 4 - Choose the suit of the final card. (hearts/diamonds/clubs/spades)
 
