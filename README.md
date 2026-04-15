@@ -8,14 +8,14 @@ Level 2 - Given the card, will the next card be higher or lower? (higher/lower) 
 Level 3 - Is the value of the next card, inside or outside the values of the two previous cards? (inside/outside) \
 Level 4 - Choose the suit of the final card. (hearts/diamonds/clubs/spades) \
 
-How to Run:\
+How to Run:
 python dist/main.py
 
-Controls: \
+Controls: 
 The game uses mouse clicks to select a button on the screen. 
 
 
-OOP Breakdown: \
+OOP Breakdown: 
 Classes - Card and deck 
 
 Card Class - \ represents a single card in the deck. Specifies the suit and value, using 2-14, 11-14 representing Jack, Queen, King, and Ace, respectively. The card is printed on the screen using a string. 
